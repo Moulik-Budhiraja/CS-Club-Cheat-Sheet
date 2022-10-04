@@ -53,66 +53,96 @@ print(result) # Prints 10
 Lists are used to store multiple values. Lists are surrounded by square brackets and each value is separated by a comma.
 
 ```py
-x = [1, 2, 3, 4, 5]
+lst1 = [1, 2, 3, 4, 5]
+
+# Lists can contain multiple data types
+lst2 = ["Bob", "Alice", "John"]
+
+# Lists can mix and match data types
+lst3 = [1, "Bob", True]
+
+# Lists can contain other lists
+lst4 = [[1, 2, 3], [4, 5, 6]]
+
+# Lists can be empty
+lst5 = []
 ```
+
+_Note: we use cannot make the name of a variable `list` as it is already a built-in function. This is why we use "lst" as a generic name for our lists_
+
+#### Accessing and Changing List Values
 
 We can access individual values in a list using their index. The first value in a list has an index of 0.
 
 ```py
-x = [1, 2, 3, 4, 5]
-print(x[0]) # Prints 1
-print(x[1]) # Prints 2
-print(x[2]) # Prints 3
-print(x[3]) # Prints 4
-print(x[4]) # Prints 5
+lst = [1, 2, 3, 4, 5]
+print(lst[0]) # Prints 1
+print(lst[1]) # Prints 2
+print(lst[2]) # Prints 3
+print(lst[3]) # Prints 4
+print(lst[4]) # Prints 5
 ```
 
 We can also access values in a list from the end using negative indexes. The last value in a list has an index of -1.
 
 ```py
-x = [1, 2, 3, 4, 5]
-print(x[-1]) # Prints 5
-print(x[-2]) # Prints 4
+lst = [1, 2, 3, 4, 5]
+print(lst[-1]) # Prints 5
+print(lst[-2]) # Prints 4
 ...
 ```
 
 We can also change the value of an item in a list.
 
 ```py
-x = [1, 2, 3, 4, 5]
-x[0] = 10
-print(x) # Prints [10, 2, 3, 4, 5]
+lst = [1, 2, 3, 4, 5]
+lst[0] = 10
+print(lst) # Prints [10, 2, 3, 4, 5]
 ```
 
-We can also add items to a list using the `append()` function.
+#### List Methods
+
+Lists have a number of useful methods that can be used to manipulate them.
+
+_Recall: A **method** is called upon on an existing object and generally manipulates that object. ie. `object.method()`_
+
+`append()` - Adds an item to the end of the list.
 
 ```py
-x = [1, 2, 3, 4, 5]
-x.append(6)
-print(x) # Prints [1, 2, 3, 4, 5, 6]
+lst = [1, 2, 3, 4, 5]
+lst.append(6)
+print(lst) # Prints [1, 2, 3, 4, 5, 6]
 ```
 
-We can also remove items from a list using the `remove()` function.
+`remove()` - Removes an item from the list.
 
 ```py
-x = [1, 2, 3, 4, 5]
-x.remove(3)
-print(x) # Prints [1, 2, 4, 5]
+lst = [1, 2, 3, 4, 5]
+lst.remove(3)
+print(lst) # Prints [1, 2, 4, 5]
 ```
 
-If we want to remove an item from a list using its index we can use the `pop()` function.
+`pop()` - Removes an item from the list and returns it.
 
 ```py
-x = [1, 2, 3, 4, 5]
-x.pop(2)
-print(x) # Prints [1, 2, 4, 5]
+lst = [1, 2, 3, 4, 5]
+y = lst.pop(2)
+print(lst) # Prints [1, 2, 4, 5]
+print(y) # Prints 3
 ```
 
-_Note: The `pop()` function returns the value that was removed from the list._
+### Length
 
-We can also get the length of a list using the `len()` function.
+We can get the length of a list using the `len()` function.
 
 ```py
-x = [1, 2, 3, 4, 5]
-print(len(x)) # Prints 5
+lst = [1, 2, 3, 4, 5]
+print(len(lst)) # Prints 5
+```
+
+The `len()` function can also be used on strings.
+
+```py
+s = "Hello World"
+print(len(s)) # Prints 11
 ```
