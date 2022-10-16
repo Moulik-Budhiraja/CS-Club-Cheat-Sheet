@@ -9,12 +9,17 @@
 ## In this lesson
 
 -   [Functions](#functions)
+    -   [Defining a Function](#defining-a-function)
+    -   [Parameters](#parameters)
+    -   [Return Values](#return-values)
 -   [Strings](#strings)
     -   [Indexing and Slicing](#indexing-and-slicing)
     -   [String Methods](#string-methods)
     -   [Useful Methods](#useful-methods)
 
 ### Functions
+
+#### Defining a Function
 
 Functions are used to store code that can be reused. We have already used a few functions, such as `print()` and `input()`. We can also create our own functions. Functions are defined using the `def` keyword.
 
@@ -29,6 +34,8 @@ We can then call the function using its name.
 my_function() # Prints "Hello World"
 ```
 
+#### Parameters
+
 Functions can also take arguments. Arguments are values that are passed into the function.
 
 ```py
@@ -41,6 +48,8 @@ We can then call the function using its name and passing in an argument.
 ```py
 my_function("Bob") # Prints "Hello Bob"
 ```
+
+#### Return Values
 
 Functions can also return values. For example the `input()` function returns the value that the user enters. We can use the `return` keyword to return a value from a function.
 
