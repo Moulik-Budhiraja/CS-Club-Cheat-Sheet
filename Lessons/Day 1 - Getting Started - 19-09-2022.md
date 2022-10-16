@@ -6,6 +6,14 @@
 
 [Back to Table of Contents](/README.md)
 
+## In this lesson
+
+-   [Print Statement](#print-statement)
+-   [Variables](#variables)
+-   [Comments](#comments)
+-   [Input](#input)
+-   [If Statements](#if-statements)
+
 ### Print Statement
 
 We can use the print function to print out a string to the console. The print function can be used to print out any type of data, not just strings.
@@ -47,7 +55,7 @@ name = input("Enter your name: ")
 age = input("Enter your age: ")
 ```
 
-### If Statement
+### If Statements
 
 The if statement is used to run code if a condition is true.
 

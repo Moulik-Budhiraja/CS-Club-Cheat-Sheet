@@ -6,6 +6,18 @@
 
 [Back to Table of Contents](/README.md)
 
+## In this lesson
+
+-   [Basic Data Types](#basic-data-types)
+-   [Strings](#strings)
+-   [Integers](#integers)
+-   [Floats](#floats)
+-   [Booleans](#booleans)
+-   [Type Conversion](#type-conversion)
+-   [Checking Data Types](#checking-data-types)
+-   [Math Operators](#math-operators)
+-   [Control Flow](#control-flow)
+
 ### Basic Data Types
 
 There are 4 basic data types in Python:
